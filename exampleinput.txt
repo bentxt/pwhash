@@ -1,0 +1,3 @@
+title usernae	URL
+nearlyfreespeech.net	garfield	https://members.nearlyfreespeech.net/login/	
+sent.com	mailuser@sent.com	https://www.fastmail.fm
