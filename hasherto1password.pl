@@ -1,13 +1,13 @@
-# run: perl -san   gen.pl -salt=mysalt  domains.txt
+# run: perl -san   gen.pl -masterpw=mymasterpw  domains.txt
 BEGIN{
-    chomp $salt;
-    unless($salt){ die "no salt" };
+    chomp $masterpw;
+    unless($masterpw){ die "no masterpw" };
 
     print "title\tusername\tpassword\tURL\n"
 }
 unless($. == 1 ){
 #chomp $_;
-$pw = qx(/usr/local/bin/node ./cli_passhash.js $salt $F[0] 20);
+$pw = qx(/usr/local/bin/node ./cli_passhash.js $F[0] $masterpw 20);
 
 chomp $F[0];
 chomp $F[1];

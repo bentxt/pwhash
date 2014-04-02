@@ -2,4 +2,4 @@
 
 #echo "Salt/masterpass"
 #read -s SALT
-perl -san   hasherto1password.pl -salt=$1 $2 
+perl -san   hasherto1password.pl -masterpw=$1 $2 

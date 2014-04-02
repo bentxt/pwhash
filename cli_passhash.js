@@ -618,8 +618,8 @@ function convertToDigits(sInput, seed, lenOut)
         return s;
     }
 
-var pass = process.argv[2];
-var salt = process.argv[3];
+var salt = process.argv[2];
+var pass = process.argv[3];
 var size = process.argv[4];
 
 var hashWord = generateHashWord(
