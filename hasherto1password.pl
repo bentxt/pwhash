@@ -1,4 +1,4 @@
-# run: perl -san   gen.pl -salt=term3  domains.txt
+# run: perl -san   gen.pl -salt=mysalt  domains.txt
 BEGIN{
     chomp $salt;
     unless($salt){ die "no salt" };
